@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"outDir": "dist",
+		"strict": false,
+		"module": "CommonJS",
+		"target": "ES6",
+		"allowJs": true,
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"noImplicitThis": true,
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"moduleResolution": "node",
+		"noEmitOnError": true,
+		"removeComments": true,
+		"noImplicitAny": true,
+		"forceConsistentCasingInFileNames": true,
+		"noUnusedLocals": false,
+		"pretty": true,
+		"baseUrl": ".",
+		"paths": {
+			"@mirailabs-co/*": ["src"]
+		},
+		"experimentalDecorators": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
+}
