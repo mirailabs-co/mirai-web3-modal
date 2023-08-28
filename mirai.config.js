@@ -1,5 +1,5 @@
 module.exports = {
-	'name': 'miraiidjs',
+	'name': 'mirai-web3-modal',
 	'esm': false,
 	'cjs': false,
 };

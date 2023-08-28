@@ -15,8 +15,9 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MiraiWeb3Modal = void 0;
-require("./ui/components/index");
-require("./ui/partials/mirai-web3-modal");
+require("./ui/components");
+require("./ui/partials");
+require("./ui/utils");
 require("./ui/views");
 require("./core/controllers");
 __exportStar(require("./ui/components/mirai-web3-qrcode"), exports);
