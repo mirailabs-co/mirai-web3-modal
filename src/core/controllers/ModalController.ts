@@ -25,8 +25,11 @@ export const ModalController = {
       callback(state);
     });
   },
-  close() {
-    state.open = false;
+  async close() {
+    return new Promise<void>((resolve) => {
+      state.open = false;
+      resolve();
+    });
   },
   setIsUiLoaded(status: boolean) {
     state.isUiLoaded = status;

@@ -85,10 +85,10 @@ class MiraiWeb3Modal extends LitElement {
   }
 
   private async onCloseModalEvent() {
-    this.toggleBodyScroll(true);
-    this.removeKeyboardEvents();
     this.active = false;
     this.open = false;
+    this.toggleBodyScroll(true);
+    this.removeKeyboardEvents();
   }
 
   private addKeyboardEvents() {

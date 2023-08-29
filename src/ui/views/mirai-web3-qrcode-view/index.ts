@@ -63,12 +63,12 @@ export class MiraiWeb3QrcodeView extends LitElement {
     return html`${this.uri
       ? html`
           <div class="QR-code">
-            <div class="bottom-bar">
+            <!-- <div class="bottom-bar">
               <p class="content">Don’t have the Mirai App?</p>
               <button class="button">
                 <div class="label">GET</div>
-              </button>
-            </div>
+              </button> 
+            </div> -->
 
             ${until(this.uriQrcode(), "Loading...")}
             <div class="navigation-bar">
