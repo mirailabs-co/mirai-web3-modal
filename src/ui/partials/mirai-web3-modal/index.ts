@@ -1,14 +1,20 @@
-import { ModalController } from "../../core/controllers/ModalController";
+import { ModalController } from "../../../core/controllers/ModalController";
 import { LitElement, html } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import React, { PointerEvent } from "react";
 import { createComponent } from "@lit-labs/react";
+import styles from "./styles.css.js";
+import { UiUtil } from "../../utils/UiUtil";
+import { animate } from "motion";
+import { classMap } from "lit/directives/class-map.js";
 
 // eslint-disable-next-line no-undef
 type Target = HTMLElement | undefined;
 
 // @customElement("mirai-web3-modal")
 class MiraiWeb3Modal extends LitElement {
+  public static styles = [styles];
+
   // -- state & properties ------------------------------------------- //
 
   @state() open = false;
@@ -62,6 +68,18 @@ class MiraiWeb3Modal extends LitElement {
     this.addKeyboardEvents();
     this.open = true;
     setTimeout(async () => {
+      const animation = UiUtil.isMobileAnimation()
+        ? { y: ["50vh", "0vh"] }
+        : { scale: [0.98, 1] };
+      const delay = 0.1;
+      const duration = 0.2;
+
+      await Promise.all([
+        animate(this.overlayEl, { opacity: [0, 1] }, { delay, duration })
+          .finished,
+        animate(this.containerEl, animation, { delay, duration }).finished,
+      ]);
+
       this.active = true;
     }, 0);
   }
@@ -79,27 +97,43 @@ class MiraiWeb3Modal extends LitElement {
         ModalController.close();
       } else if (event.key === "Tab") {
         if (!(event.target as Target)?.tagName.includes("mirai-web3-")) {
-          // this.containerEl.focus();
+          this.containerEl.focus();
         }
       }
     });
-    // this.containerEl.focus();
+    this.containerEl.focus();
+  }
+
+  private get overlayEl() {
+    return UiUtil.getShadowRootElement(this, ".wcm-overlay");
+  }
+
+  private get containerEl() {
+    return UiUtil.getShadowRootElement(this, ".wcm-container");
   }
 
   private removeKeyboardEvents() {}
 
   // -- render ------------------------------------------------------- //
   protected render() {
+    const classes = {
+      "wcm-overlay": this.open,
+      "wcm-active": this.active,
+    };
+
     return html`
       <div
+        class=${classMap(classes)}
         id="mirai-web3-modal"
         @click=${this.onCloseModal}
         role="alertdialog"
         aria-modal="true"
       >
-        ${this.open
-          ? html`<mirai-web3-qrcode-view></mirai-web3-qrcode-view> `
-          : null}
+        <div class="wcm-container" tabindex="0">
+          ${this.open
+            ? html`<mirai-web3-qrcode-view></mirai-web3-qrcode-view> `
+            : null}
+        </div>
       </div>
     `;
   }

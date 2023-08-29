@@ -20,6 +20,7 @@ export class MiraiWeb3Modal {
 
       const modal = document.createElement("mirai-web3-modal");
       document.body.insertAdjacentElement("beforeend", modal);
+
       ModalController.setIsUiLoaded(true);
     }
   }

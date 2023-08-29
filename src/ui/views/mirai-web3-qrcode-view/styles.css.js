@@ -1,0 +1,382 @@
+import { css } from "lit";
+
+export default css`
+  :host {
+    --12-12-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --12-12-bold-font-size: 12px;
+    --12-12-bold-font-style: normal;
+    --12-12-bold-font-weight: 700;
+    --12-12-bold-letter-spacing: 0.6000000238418579px;
+    --12-12-bold-line-height: 18px;
+    --12-12-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --12-12-heavy-font-size: 12px;
+    --12-12-heavy-font-style: normal;
+    --12-12-heavy-font-weight: 400;
+    --12-12-heavy-letter-spacing: 0.6000000238418579px;
+    --12-12-heavy-line-height: 18px;
+    --12-12-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --12-12-medium-font-size: 12px;
+    --12-12-medium-font-style: normal;
+    --12-12-medium-font-weight: 500;
+    --12-12-medium-letter-spacing: 0.6000000238418579px;
+    --12-12-medium-line-height: 18px;
+    --12-12-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --12-12-semibold-font-size: 12px;
+    --12-12-semibold-font-style: normal;
+    --12-12-semibold-font-weight: 400;
+    --12-12-semibold-letter-spacing: 0.6000000238418579px;
+    --12-12-semibold-line-height: 18px;
+    --13-13-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --13-13-bold-font-size: 13px;
+    --13-13-bold-font-style: normal;
+    --13-13-bold-font-weight: 700;
+    --13-13-bold-letter-spacing: 0.6000000238418579px;
+    --13-13-bold-line-height: 18px;
+    --13-13-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --13-13-heavy-font-size: 13px;
+    --13-13-heavy-font-style: normal;
+    --13-13-heavy-font-weight: 400;
+    --13-13-heavy-letter-spacing: 0.6000000238418579px;
+    --13-13-heavy-line-height: 18px;
+    --13-13-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --13-13-medium-font-size: 13px;
+    --13-13-medium-font-style: normal;
+    --13-13-medium-font-weight: 500;
+    --13-13-medium-letter-spacing: 0.6000000238418579px;
+    --13-13-medium-line-height: 18px;
+    --13-13-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --13-13-semibold-font-size: 13px;
+    --13-13-semibold-font-style: normal;
+    --13-13-semibold-font-weight: 400;
+    --13-13-semibold-letter-spacing: 0.6000000238418579px;
+    --13-13-semibold-line-height: 18px;
+    --14-14-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --14-14-bold-font-size: 14px;
+    --14-14-bold-font-style: normal;
+    --14-14-bold-font-weight: 700;
+    --14-14-bold-letter-spacing: 0.6000000238418579px;
+    --14-14-bold-line-height: 18px;
+    --14-14-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --14-14-heavy-font-size: 14px;
+    --14-14-heavy-font-style: normal;
+    --14-14-heavy-font-weight: 400;
+    --14-14-heavy-letter-spacing: 0.6000000238418579px;
+    --14-14-heavy-line-height: 18px;
+    --14-14-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --14-14-medium-font-size: 14px;
+    --14-14-medium-font-style: normal;
+    --14-14-medium-font-weight: 500;
+    --14-14-medium-letter-spacing: 0.6000000238418579px;
+    --14-14-medium-line-height: 18px;
+    --14-14-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --14-14-semibold-font-size: 14px;
+    --14-14-semibold-font-style: normal;
+    --14-14-semibold-font-weight: 400;
+    --14-14-semibold-letter-spacing: 0.6000000238418579px;
+    --14-14-semibold-line-height: 18px;
+    --16-16-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --16-16-bold-font-size: 16px;
+    --16-16-bold-font-style: normal;
+    --16-16-bold-font-weight: 700;
+    --16-16-bold-letter-spacing: 0.6000000238418579px;
+    --16-16-bold-line-height: 20px;
+    --16-16-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --16-16-heavy-font-size: 16px;
+    --16-16-heavy-font-style: normal;
+    --16-16-heavy-font-weight: 400;
+    --16-16-heavy-letter-spacing: 0.6000000238418579px;
+    --16-16-heavy-line-height: 20px;
+    --16-16-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --16-16-medium-font-size: 16px;
+    --16-16-medium-font-style: normal;
+    --16-16-medium-font-weight: 500;
+    --16-16-medium-letter-spacing: 0.6000000238418579px;
+    --16-16-medium-line-height: 20px;
+    --16-16-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --16-16-semibold-font-size: 16px;
+    --16-16-semibold-font-style: normal;
+    --16-16-semibold-font-weight: 400;
+    --16-16-semibold-letter-spacing: 0.6000000238418579px;
+    --16-16-semibold-line-height: 20px;
+    --18-18-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --18-18-bold-font-size: 18px;
+    --18-18-bold-font-style: normal;
+    --18-18-bold-font-weight: 700;
+    --18-18-bold-letter-spacing: 0.6000000238418579px;
+    --18-18-bold-line-height: 24px;
+    --18-18-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --18-18-heavy-font-size: 18px;
+    --18-18-heavy-font-style: normal;
+    --18-18-heavy-font-weight: 400;
+    --18-18-heavy-letter-spacing: 0.6000000238418579px;
+    --18-18-heavy-line-height: 24px;
+    --18-18-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --18-18-medium-font-size: 18px;
+    --18-18-medium-font-style: normal;
+    --18-18-medium-font-weight: 500;
+    --18-18-medium-letter-spacing: 0.6000000238418579px;
+    --18-18-medium-line-height: 24px;
+    --18-18-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --18-18-semibold-font-size: 18px;
+    --18-18-semibold-font-style: normal;
+    --18-18-semibold-font-weight: 400;
+    --18-18-semibold-letter-spacing: 0.6000000238418579px;
+    --18-18-semibold-line-height: 24px;
+    --20-20-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --20-20-bold-font-size: 20px;
+    --20-20-bold-font-style: normal;
+    --20-20-bold-font-weight: 700;
+    --20-20-bold-letter-spacing: 0.6000000238418579px;
+    --20-20-bold-line-height: 24px;
+    --20-20-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --20-20-heavy-font-size: 20px;
+    --20-20-heavy-font-style: normal;
+    --20-20-heavy-font-weight: 400;
+    --20-20-heavy-letter-spacing: 0.6000000238418579px;
+    --20-20-heavy-line-height: 24px;
+    --20-20-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --20-20-medium-font-size: 20px;
+    --20-20-medium-font-style: normal;
+    --20-20-medium-font-weight: 500;
+    --20-20-medium-letter-spacing: 0.6000000238418579px;
+    --20-20-medium-line-height: 24px;
+    --20-20-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --20-20-semibold-font-size: 20px;
+    --20-20-semibold-font-style: normal;
+    --20-20-semibold-font-weight: 400;
+    --20-20-semibold-letter-spacing: 0.6000000238418579px;
+    --20-20-semibold-line-height: 24px;
+    --23-23-bold-font-family: "SFPro Rounded-Bold", Helvetica;
+    --23-23-bold-font-size: 23px;
+    --23-23-bold-font-style: normal;
+    --23-23-bold-font-weight: 700;
+    --23-23-bold-letter-spacing: 0.6000000238418579px;
+    --23-23-bold-line-height: 29px;
+    --23-23-heavy-font-family: "SFPro Rounded-Heavy", Helvetica;
+    --23-23-heavy-font-size: 23px;
+    --23-23-heavy-font-style: normal;
+    --23-23-heavy-font-weight: 400;
+    --23-23-heavy-letter-spacing: 0.6000000238418579px;
+    --23-23-heavy-line-height: 29px;
+    --23-23-medium-font-family: "SFPro Rounded-Medium", Helvetica;
+    --23-23-medium-font-size: 23px;
+    --23-23-medium-font-style: normal;
+    --23-23-medium-font-weight: 500;
+    --23-23-medium-letter-spacing: 0.6000000238418579px;
+    --23-23-medium-line-height: 29px;
+    --23-23-semibold-font-family: "SFPro Rounded-Semibold", Helvetica;
+    --23-23-semibold-font-size: 23px;
+    --23-23-semibold-font-style: normal;
+    --23-23-semibold-font-weight: 400;
+    --23-23-semibold-letter-spacing: 0.6000000238418579px;
+    --23-23-semibold-line-height: 29px;
+    --darkaccentblue: rgba(56, 152, 255, 1);
+    --darkaccentgreen: rgba(75, 209, 102, 1);
+    --darkaccentorange: rgba(255, 152, 61, 1);
+    --darkaccentpink: rgba(255, 122, 184, 1);
+    --darkaccentpurple: rgba(122, 112, 255, 1);
+    --darkaccentred: rgba(255, 98, 87, 1);
+    --darkactionbuttonborder: rgba(255, 255, 255, 0.04);
+    --darkactionbuttonbordermobile: rgba(255, 255, 255, 0.06);
+    --darkactionbuttonsecondarybackground: rgba(255, 255, 255, 0.06);
+    --darkclosebutton: rgba(224, 232, 255, 0.6);
+    --darkclosebuttonbackground: rgba(255, 255, 255, 0.06);
+    --darkconnectbuttonbackground: rgba(26, 27, 31, 1);
+    --darkconnectbuttonbackgrounderror: rgba(255, 73, 74, 1);
+    --darkconnectbuttontext: rgba(255, 255, 255, 1);
+    --darkconnectbuttontexterror: rgba(255, 255, 255, 1);
+    --darkconnectionindicator: rgba(48, 224, 0, 1);
+    --darkerror: rgba(255, 73, 74, 1);
+    --darkgeneralborder: rgba(255, 255, 255, 0.08);
+    --darkgeneralborderdim: rgba(255, 255, 255, 0.04);
+    --darkmenuitembackground: rgba(224, 232, 255, 0.1);
+    --darkmodalbackdrop: rgba(0, 0, 0, 0.6);
+    --darkmodalbackground: rgba(26, 27, 31, 1);
+    --darkmodaltext: rgba(255, 255, 255, 1);
+    --darkmodaltextdim: rgba(224, 232, 255, 0.3);
+    --darkmodaltextsecondary: rgba(255, 255, 255, 0.6);
+    --darkprofileaction: rgba(224, 232, 255, 0.1);
+    --darkprofileactionhover: rgba(224, 232, 255, 0.2);
+    --darkprofileforeground: rgba(224, 232, 255, 0.05);
+    --darkselectedoptionborder: rgba(224, 232, 255, 0.1);
+    --darkstandby: rgba(255, 214, 65, 1);
+    --lightaccentaccentcolorforeground: rgba(255, 255, 255, 1);
+    --lightaccentblue: rgba(14, 118, 253, 1);
+    --lightaccentgreen: rgba(29, 184, 71, 1);
+    --lightaccentorange: rgba(255, 128, 31, 1);
+    --lightaccentpink: rgba(255, 92, 160, 1);
+    --lightaccentpurple: rgba(95, 90, 250, 1);
+    --lightaccentred: rgba(250, 66, 60, 1);
+    --lightactionbuttonborder: rgba(0, 0, 0, 0.04);
+    --lightactionbuttonbordermobile: rgba(0, 0, 0, 0.06);
+    --lightactionbuttonsecondarybackground: rgba(0, 0, 0, 0.06);
+    --lightclosebutton: rgba(60, 66, 66, 0.8);
+    --lightclosebuttonbackground: rgba(0, 0, 0, 0.06);
+    --lightconnectbuttonbackground: rgba(255, 255, 255, 1);
+    --lightconnectbuttonbackgrounderror: rgba(255, 73, 74, 1);
+    --lightconnectbuttontext: rgba(37, 41, 46, 1);
+    --lightconnectbuttontexterror: rgba(255, 255, 255, 1);
+    --lightconnectionindicator: rgba(48, 224, 0, 1);
+    --lighterror: rgba(255, 73, 74, 1);
+    --lightgeneralborder: rgba(0, 0, 0, 0.06);
+    --lightgeneralborderdim: rgba(0, 0, 0, 0.03);
+    --lightmenuitembackground: rgba(60, 66, 66, 0.1);
+    --lightmodalbackdrop: rgba(0, 0, 0, 0.3);
+    --lightmodalbackground: rgba(255, 255, 255, 1);
+    --lightmodaltext: rgba(37, 41, 46, 1);
+    --lightmodaltextdim: rgba(60, 66, 66, 0.3);
+    --lightmodaltextsecondary: rgba(60, 66, 66, 0.6);
+    --lightprofileaction: rgba(255, 255, 255, 1);
+    --lightprofileactionhover: rgba(255, 255, 255, 0.5);
+    --lightprofileforeground: rgba(60, 66, 66, 0.06);
+    --lightselectedoptionborder: rgba(60, 66, 66, 0.1);
+    --lightstandby: rgba(255, 214, 65, 1);
+    --midnightaccentblue: rgba(56, 152, 255, 1);
+    --midnightaccentgreen: rgba(75, 209, 102, 1);
+    --midnightaccentorange: rgba(255, 152, 61, 1);
+    --midnightaccentpink: rgba(255, 122, 184, 1);
+    --midnightaccentpurple: rgba(122, 112, 255, 1);
+    --midnightaccentred: rgba(255, 98, 87, 1);
+    --midnightactionbuttonborder: rgba(255, 255, 255, 0.04);
+    --midnightactionbuttonbordermobile: rgba(255, 255, 255, 0.1);
+    --midnightactionbuttonsecondarybackground: rgba(255, 255, 255, 0.08);
+    --midnightclosebutton: rgba(255, 255, 255, 0.7);
+    --midnightclosebuttonbackground: rgba(255, 255, 255, 0.08);
+    --midnightconnectbuttonbackground: rgba(26, 27, 31, 1);
+    --midnightconnectbuttonbackgrounderror: rgba(255, 73, 74, 1);
+    --midnightconnectbuttontext: rgba(255, 255, 255, 1);
+    --midnightconnectbuttontexterror: rgba(255, 255, 255, 1);
+    --midnightconnectionindicator: rgba(48, 224, 0, 1);
+    --midnighterror: rgba(255, 73, 74, 1);
+    --midnightgeneralborder: rgba(255, 255, 255, 0.08);
+    --midnightgeneralborderdim: rgba(255, 255, 255, 0.04);
+    --midnightmenuitembackground: rgba(255, 255, 255, 0.08);
+    --midnightmodalbackdrop: rgba(68, 68, 68, 0.4);
+    --midnightmodalbackground: rgba(0, 0, 0, 1);
+    --midnightmodaltext: rgba(255, 255, 255, 1);
+    --midnightmodaltextdim: rgba(255, 255, 255, 0.2);
+    --midnightmodaltextsecondary: rgba(255, 255, 255, 0.6);
+    --midnightprofileaction: rgba(255, 255, 255, 0.1);
+    --midnightprofileactionhover: rgba(255, 255, 255, 0.2);
+    --midnightprofileforeground: rgba(255, 255, 255, 0.06);
+    --midnightselectedoptionborder: rgba(224, 232, 255, 0.1);
+    --midnightstandby: rgba(255, 214, 65, 1);
+  }
+
+  :host {
+    all: initial;
+  }
+
+  .QR-code {
+    position: relative;
+    width: 432px;
+    height: 504px;
+
+    background-color: var(--lightmodalbackground);
+    border-radius: 24px;
+  }
+
+  .QR-code .bottom-bar {
+    display: flex;
+    width: 432px;
+    align-items: center;
+    gap: 24px;
+
+    position: absolute;
+    top: 444px;
+    left: 0;
+  }
+
+  .QR-code .content {
+    position: relative;
+    flex: 1;
+    height: 18px;
+    font-family: var(--14-14-medium-font-family);
+    font-weight: var(--14-14-medium-font-weight);
+    color: var(--lightmodaltextsecondary);
+    font-size: var(--14-14-medium-font-size);
+    letter-spacing: var(--14-14-medium-letter-spacing);
+    line-height: var(--14-14-medium-line-height);
+    white-space: nowrap;
+    font-style: var(--14-14-medium-font-style);
+    padding: 10px 24px;
+  }
+
+  .QR-code .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 12px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--lightactionbuttonsecondarybackground);
+    border-radius: 14px;
+    border: 1px solid;
+    border-color: var(--lightactionbuttonborder);
+    all: unset;
+    box-sizing: border-box;
+    padding: 10px 24px;
+  }
+
+  .QR-code .label {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--14-14-bold-font-family);
+    font-weight: var(--14-14-bold-font-weight);
+    color: var(--lightaccentblue);
+    font-size: var(--14-14-bold-font-size);
+    letter-spacing: var(--14-14-bold-letter-spacing);
+    line-height: var(--14-14-bold-line-height);
+    white-space: nowrap;
+    font-style: var(--14-14-bold-font-style);
+  }
+
+  .QR-code .img {
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    top: 60px;
+    left: 24px;
+    object-fit: cover;
+
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--lightgeneralborder);
+  }
+
+  .QR-code .navigation-bar {
+    position: absolute;
+    width: 432px;
+    height: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  .QR-code .title {
+    position: absolute;
+    width: 308px;
+    height: 24px;
+    top: 17px;
+    left: 62px;
+    font-family: var(--18-18-heavy-font-family);
+    font-weight: var(--18-18-heavy-font-weight);
+    color: var(--lightmodaltext);
+    font-size: var(--18-18-heavy-font-size);
+    text-align: center;
+    letter-spacing: var(--18-18-heavy-letter-spacing);
+    line-height: var(--18-18-heavy-line-height);
+    white-space: nowrap;
+    font-style: var(--18-18-heavy-font-style);
+  }
+
+  .QR-code .icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 16px;
+    left: 388px;
+  }
+`;
