@@ -125,14 +125,16 @@ class MiraiWeb3Modal extends LitElement {
       <div
         class=${classMap(classes)}
         id="mirai-web3-modal"
-        @click=${this.onCloseModal}
+        // @click=${this.onCloseModal}
         role="alertdialog"
         aria-modal="true"
       >
         <div class="wcm-container" tabindex="0">
-          ${this.open
-            ? html`<mirai-web3-qrcode-view></mirai-web3-qrcode-view> `
-            : null}
+          ${
+            this.open
+              ? html`<mirai-web3-qrcode-view></mirai-web3-qrcode-view> `
+              : null
+          }
         </div>
       </div>
     `;

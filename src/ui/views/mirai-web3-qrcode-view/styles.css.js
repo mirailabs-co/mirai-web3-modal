@@ -268,8 +268,7 @@ export default css`
   }
 
   .QR-code {
-    position: relative;
-    width: 432px;
+    display: flex;
     height: 504px;
 
     background-color: var(--lightmodalbackground);
@@ -334,11 +333,10 @@ export default css`
   }
 
   .QR-code .img {
-    position: absolute;
     width: 384px;
     height: 384px;
-    top: 60px;
-    left: 24px;
+    margin-top: 60px;
+    margin-left: 24px;
     object-fit: cover;
 
     border-radius: 12px;

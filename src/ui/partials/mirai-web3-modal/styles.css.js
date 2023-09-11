@@ -36,8 +36,6 @@ export default css`
 
   .wcm-container {
     position: relative;
-    max-width: 432px;
-    width: 100%;
     outline: none;
     border-radius: 12px 12px 24px 24px
     border: 1px solid var(--wcm-color-overlay);
@@ -66,9 +64,9 @@ export default css`
       border-radius: 24px 24px 0 0;
     }
 
-    .wcm-overlay {
-      align-items: flex-end;
-    }
+    // .wcm-overlay {
+    //   align-items: flex-end;
+    // }
   }
 
   @media (max-width: 440px) {
