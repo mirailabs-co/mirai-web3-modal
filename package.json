@@ -1,6 +1,6 @@
 {
   "name": "@mirailabs-co/mirai-web3-modal",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
