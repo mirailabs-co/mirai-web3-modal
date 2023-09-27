@@ -11,10 +11,19 @@ export class MiraiWeb3ChooseWallet extends LitElement {
 
   @property()
   private uri: string | null = null;
+
+  @property()
+  private redirectUrl: string | null = null;
   // -- private ------------------------------------------------------ //
   private onChooseWallet() {
     if (this.uri) {
-      const nativeUrl = CoreUtil.formatNativeUrl("metamask://", this.uri);
+      const nativeUrl = CoreUtil.formatNativeUrl(
+        "metamask://",
+        this.uri,
+        this.redirectUrl
+      );
+
+      alert(nativeUrl);
       if (nativeUrl) {
         window.location.assign(nativeUrl);
       }

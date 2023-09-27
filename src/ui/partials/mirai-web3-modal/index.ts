@@ -135,6 +135,8 @@ class MiraiWeb3Modal extends LitElement {
               ? html`<mirai-web3-qrcode-view></mirai-web3-qrcode-view> `
               : null
           }
+
+          <w3m-modal-toast></w3m-modal-toast>
         </div>
       </div>
     `;

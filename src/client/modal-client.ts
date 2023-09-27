@@ -1,6 +1,6 @@
 import type { IModalState } from "../core/controllers/ModalController";
 import { ModalController } from "../core/controllers/ModalController";
-
+import { Toaster } from "react-hot-toast";
 /**
  * Types
  */

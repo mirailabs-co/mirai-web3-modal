@@ -12,15 +12,16 @@ export class MiraiWeb3QrcodeView extends LitElement {
   public static styles = [styles];
 
   @state() private uri: string | null = null;
+  @state() private redirectUrl: string | null = null;
 
   // -- lifecycle ---------------------------------------------------- //
   public constructor() {
     super();
     setTimeout(() => {
-      const { uri } = ModalController.state;
+      const { uri, redirectUrl } = ModalController.state;
 
-      console.log("uri", uri);
       this.uri = uri;
+      this.redirectUrl = redirectUrl;
     }, 0);
   }
 
@@ -38,11 +39,16 @@ export class MiraiWeb3QrcodeView extends LitElement {
             ${isMobile()
               ? html`<mirai-web3-choose-wallet
                   uri=${this.uri}
+                  redirectUrl=${this.redirectUrl}
                 ></mirai-web3-choose-wallet>`
               : html`${until(this.uriQrcode(), "Loading...")}
                   <div class="navigation-bar">
                     <div class="title">Scan with Mirai</div>
-                  </div>`}
+                  </div>
+                  <mirai-web3-choose-wallet
+                    uri=${this.uri}
+                    redirectUrl=${this.redirectUrl}
+                  ></mirai-web3-choose-wallet>`}
           </div>
         `
       : html`<mirai-web3-spinner></mirai-web3-spinner>`}`;

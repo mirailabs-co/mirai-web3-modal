@@ -8,7 +8,8 @@ export const CoreUtil = {
 
   formatNativeUrl(
     appUrl: string | undefined,
-    wcUri: string
+    wcUri: string,
+    redirectUrl?: string
   ): string | undefined {
     if (!appUrl) return undefined;
 
@@ -22,6 +23,11 @@ export const CoreUtil = {
     }
 
     const encodedWcUrl = encodeURIComponent(wcUri);
+
+    if (redirectUrl) {
+      const redirect = encodeURIComponent(redirectUrl);
+      return `${safeAppUrl}wc?uri=${encodedWcUrl}&redirect=${redirect}`;
+    }
 
     return `${safeAppUrl}wc?uri=${encodedWcUrl}`;
   },

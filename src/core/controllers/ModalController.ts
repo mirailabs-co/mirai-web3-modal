@@ -4,15 +4,18 @@ export type IModalState = {
   open: boolean;
   isUiLoaded: boolean;
   uri: string | null;
+  redirectUrl: string | null;
 };
 
 type Options = {
   uri: string;
+  redirectUrl?: string;
 };
 
 const state = observable<IModalState>({
   open: false,
   uri: null,
+  redirectUrl: null,
   isUiLoaded: false,
 });
 
@@ -42,6 +45,7 @@ export const ModalController = {
       if (state.isUiLoaded) {
         state.open = true;
         state.uri = opts.uri;
+        state.redirectUrl = opts.redirectUrl;
         resolve();
       }
       // Otherwise (slow network) re-attempt open checks
@@ -51,6 +55,7 @@ export const ModalController = {
             clearInterval(interval);
             state.open = true;
             state.uri = opts.uri;
+            state.redirectUrl = opts.redirectUrl;
             resolve();
           }
         }, 200);
